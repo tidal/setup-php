@@ -1,0 +1,16 @@
+Set of simple scripts to build and install homebrewed PHP 
+with or without dependencies on a debian/ubuntu system
+
+setup:
+- rename '_config.sh' to 'config.sh' and adjust your changes 
+- rename '_build.sh'  to 'build.sh' and adjust your changes 
+
+
+usage:
+
+- config.sh 			: sets up variables for the script and is included in every of the other scripts
+- install-dependencies.sh 	: tries to install all php dependencies via debian/ubuntu packages (including apache2/mysql)
+- download.sh			: downloads and unpacks php source
+- build.sh 			: configures and builds php from the source (assumes install-dependencies.sh and download.sh to be run before) 
+- install.sh			: installs php in the system and tries to configure apache correctly
+- install-all.sh		: runs whole installation process by calling all the other scripts
